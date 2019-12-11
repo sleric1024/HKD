@@ -1,0 +1,44 @@
+.person-info .topic {
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
+  text-align: center;
+  background: #4c5154;
+  color: white;
+}
+.person-info .topic p {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.person-info .ant-tag {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+.person-info .ant-tag .anticon-close {
+  vertical-align: middle;
+  font-size: 1rem;
+}
+.person-info .am-list-item.am-input-item {
+  height: 44px;
+  padding-left: 15px;
+  border: solid 1px #999898;
+  flex: 50% 2 1;
+}
+.person-info .am-list-item .am-input-control input {
+  color: #878b8d;
+  font-size: 1.25rem;
+}
+.person-info .add-button {
+  height: 44px;
+  width: 44px;
+  line-height: 40px;
+  font-size: 2rem;
+  color: #878b8d;
+}
+
+.person-info .am-list-item .am-list-line .am-list-content {
+  color: #999898;
+}

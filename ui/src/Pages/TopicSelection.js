@@ -5,7 +5,7 @@ import 'antd-mobile/dist/antd-mobile.css';
 import 'antd/dist/antd.css';
 import '../static/css/TopicSelection.css';
 
-class Test extends Component {
+class TopicSelection extends Component {
 
   render() {
 
@@ -28,14 +28,19 @@ class Test extends Component {
       text: item.text,
     }));
 
+    const onTopicClicked = (el, index) => {
+      debugger;
+    };
+
     return (
      <div className="topic-selection">
         <NavBar
-          className="nav"
-          mode="light"
+          className="navbar-style"
           leftContent="Cancel"
           onLeftClick={() => console.log('onLeftClick')}
-          rightContent="Next" />
+          rightContent="Next">
+            <Icon type="heart" style={{ color: 'rgb(255, 219, 2)', fontSize: '2rem'}}></Icon>
+        </NavBar>
 
          <WingBlank>
           <WhiteSpace size="lg" />
@@ -45,7 +50,7 @@ class Test extends Component {
               <Avatar src="https://ca.slack-edge.com/T95TT7UDT-WKYHKLS1H-a03025123594-512" size={80}>
               </Avatar>
             </Flex.Item>
-            <Flex.Item> <h3>Hello Vera!</h3></Flex.Item>
+            <Flex.Item><h3>Hello Vera!</h3></Flex.Item>
           </Flex>
 
           <WhiteSpace size="lg" />
@@ -53,7 +58,7 @@ class Test extends Component {
           <WhiteSpace size="lg" />
 
           <h3 style={{color: '#999898', fontSize: '1.25rem'}}>What's your interested topic?</h3>
-          <Grid  className="topic-grid" data={data} columnNum={3} hasLine={false} itemStyle={{color: '#fff'}} activeStyle={false} />
+          <Grid className="topic-grid" data={data} columnNum={3} hasLine={false} itemStyle={{color: '#fff'}} activeStyle={false} />
 
         </WingBlank>
       </div>
@@ -61,4 +66,4 @@ class Test extends Component {
   }
 }
 
-export default Test;
+export default TopicSelection;
