@@ -27,7 +27,7 @@ class Entry extends Component {
         <List renderHeader={() => "Suggestion List"}>
           <Flex align="start">
             <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={40}></Avatar>
-            <List.Item multipleLine>Victoria Banks (I319324)
+            <List.Item >Victoria Banks (I319324)
               <List.Item.Brief>
                 <Rate disabled defaultValue={5} />
                 5/5</List.Item.Brief>
@@ -41,6 +41,8 @@ class Entry extends Component {
                 <Tag color="purple">Single</Tag>
               </List.Item.Brief>
             </List.Item>
+            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
           </Flex>
 
           <Flex align="start">
@@ -55,6 +57,8 @@ class Entry extends Component {
                 <Tag color="purple">Single</Tag>
               </List.Item.Brief>
             </List.Item>
+            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
           </Flex>
 
           <Flex align="start">
@@ -68,6 +72,8 @@ class Entry extends Component {
                 <Tag color="purple">Single</Tag>
               </List.Item.Brief>
             </List.Item>
+            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
           </Flex>
 
           <Flex align="start">
@@ -81,6 +87,8 @@ class Entry extends Component {
                 <Tag color="cyan">Love Pet</Tag>
               </List.Item.Brief>
             </List.Item>
+            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
           </Flex>
         </List>
       </div>
