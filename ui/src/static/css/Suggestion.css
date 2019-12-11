@@ -1,0 +1,27 @@
+
+.suggestion-selection .am-navbar {
+  margin-top: 10px;
+}
+.suggestion-selection div.nav .am-navbar-left {
+  color: gray;
+}
+.suggestion-selection .am-list-header {
+  color: #000000;
+}
+.suggestion-selection div.nav .am-navbar-title {
+  margin: 0 140px;
+  background-color:#c8c6c6;
+}
+
+.suggestion-selection .ant-tag {
+  margin: 0 10px 5px 0;
+}
+
+.suggestion-selection .ant-rate {
+  font-size: 14px;
+  color: #308930e8;
+}
+
+.suggestion-selection .ant-avatar {
+  margin: 15px 0 0 15px;
+}
