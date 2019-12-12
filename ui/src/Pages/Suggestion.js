@@ -27,7 +27,7 @@ class Entry extends Component {
         <List renderHeader={() => "Suggestion List"}>
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={30}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={40}></Avatar>
             <List.Item >
               Victoria Banks
               <List.Item.Brief>
@@ -52,7 +52,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={30}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={40}></Avatar>
             <List.Item>Kathy Tucker
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
@@ -74,7 +74,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={30}></Avatar>
+            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={40}></Avatar>
             <List.Item>Marco del Toro
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
@@ -94,7 +94,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={30}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={40}></Avatar>
             <List.Item>Howard Domingo
               <List.Item.Brief>
                 <Rate disabled defaultValue={2} style={{color: '#ffa500e6'}}/>

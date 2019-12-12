@@ -5,8 +5,9 @@ import { Tag, Icon, Divider, Spin} from 'antd';
 import 'antd-mobile/dist/antd-mobile.css';
 import 'antd/dist/antd.css';
 import '../static/css/PersonInfo.css';
+import { Link } from 'react-router-dom';
 
-function PersonInfo () {
+function PersonInfo (props) {
 
   const [interestTag, setInterestTag] = useState('');
   const [gender, setGender] = useState('male');
@@ -35,7 +36,7 @@ function PersonInfo () {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 100);
   },[]);
 
   return (
@@ -45,7 +46,10 @@ function PersonInfo () {
         className="navbar-style"
         leftContent="Cancel"
         onLeftClick={() => console.log('onLeftClick')}
-        rightContent="Next">
+        onRightClick={() => {props.history.push('/welcome')}}
+        rightContent={
+          <Link to="/matching">Next</Link>
+        }>
           <Icon type="heart" style={{ color: 'rgb(255, 219, 2)', fontSize: '2rem'}}></Icon>
       </NavBar>
 

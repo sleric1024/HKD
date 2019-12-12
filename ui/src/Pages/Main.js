@@ -5,6 +5,7 @@ import TopicSelection from './TopicSelection';
 import Login from './Login';
 import Suggestion from './Suggestion';
 import PersionInfo from './PersonInfo';
+import Matching from './Matching';
 
 function Main() {
   return (
@@ -14,6 +15,7 @@ function Main() {
       <Route path="/login/" exact component={Login} />
       <Route path="/suggestion/" exact component={Suggestion} />
       <Route path="/info/" exact component={PersionInfo} />
+      <Route path="/matching/" exact component={Matching} />
     </Router>
   )
 }
