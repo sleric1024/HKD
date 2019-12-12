@@ -1,6 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { NavBar, WhiteSpace, WingBlank, Flex, Grid } from 'antd-mobile';
-import { Avatar, Icon } from 'antd';
+import { Avatar, Icon, Spin } from 'antd';
 import 'antd-mobile/dist/antd-mobile.css';
 import 'antd/dist/antd.css';
 import '../static/css/TopicSelection.css';
@@ -35,8 +35,16 @@ function TopicSelection(props) {
     }, 1500);
   };
 
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 200);
+  },[]);
+
   return (
-    <div className="topic-selection">
+    <Spin spinning={isLoading} >
+      <div className="topic-selection">
       <NavBar
         className="navbar-style"
         leftContent="Cancel"
@@ -65,6 +73,7 @@ function TopicSelection(props) {
 
       </WingBlank>
     </div>
+    </Spin>
   );
 };
 
