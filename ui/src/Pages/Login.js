@@ -43,7 +43,7 @@ class Login extends Component {
           </List.Item>
           <Link to="/welcome">
             <List.Item thumb={logo4} extra='2019/12/13'>SAP Digital Employee Center
-              <List.Item.Brief>Enjoy</List.Item.Brief>
+              <List.Item.Brief>Welcome to SAP Digital Employee Center</List.Item.Brief>
             </List.Item>
           </Link>
         </List>
