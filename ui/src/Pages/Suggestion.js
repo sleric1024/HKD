@@ -25,16 +25,15 @@ class Entry extends Component {
         </NavBar>
 
         <List renderHeader={() => "Suggestion List"}>
-          <WingBlank size="md">
+          <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={58}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={30}></Avatar>
             <List.Item >
               Victoria Banks
               <List.Item.Brief>
                 <Rate disabled defaultValue={5} />
                 5/5</List.Item.Brief>
               <List.Item.Brief >
-                <Tag color="magenta">吉他</Tag>
                 <Tag color="blue">瑜伽</Tag>
                 <Tag color="red">跳舞</Tag>
                 <Tag color="green">不养宠物</Tag>
@@ -51,9 +50,9 @@ class Entry extends Component {
           </Flex>
           </WingBlank>
 
-          <WingBlank size="md">
+          <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={58}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={30}></Avatar>
             <List.Item>Kathy Tucker
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
@@ -61,6 +60,7 @@ class Entry extends Component {
               <List.Item.Brief>
                 <Tag color="green">不养宠物</Tag>
                 <Tag color="gold">程序员</Tag>
+                <br />
                 <Tag color="purple">单身</Tag>
               </List.Item.Brief>
             </List.Item>
@@ -72,9 +72,9 @@ class Entry extends Component {
           </Flex>
           </WingBlank>
 
-          <WingBlank size="md">
+          <WingBlank size="sm">
             <Flex align="start">
-            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={58}></Avatar>
+            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={30}></Avatar>
             <List.Item>Marco del Toro
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
@@ -92,9 +92,9 @@ class Entry extends Component {
           </Flex>
           </WingBlank>
 
-          <WingBlank size="md">
+          <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={58}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={30}></Avatar>
             <List.Item>Howard Domingo
               <List.Item.Brief>
                 <Rate disabled defaultValue={2} style={{color: '#ffa500e6'}}/>
