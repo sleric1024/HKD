@@ -4,6 +4,7 @@ import { Avatar, Icon } from 'antd';
 import 'antd-mobile/dist/antd-mobile.css';
 import 'antd/dist/antd.css';
 import '../static/css/TopicSelection.css';
+import myPic from '../static/images/vera.png';
 
 function TopicSelection(props) {
 
@@ -49,7 +50,7 @@ function TopicSelection(props) {
 
         <Flex align="end">
           <Flex.Item className="avatar">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-WKYHKLS1H-a03025123594-512" size={80}>
+            <Avatar src={myPic} size={80}>
             </Avatar>
           </Flex.Item>
           <Flex.Item><h3>Hello Vera!</h3></Flex.Item>
