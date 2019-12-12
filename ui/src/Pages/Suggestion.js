@@ -17,28 +17,28 @@ class Entry extends Component {
     return (
       <div className="suggestion-selection">
         <NavBar
-          className="nav"
-          mode="light"
+          className="navbar-style"
           leftContent="Back"
           onLeftClick={() => console.log('onLeftClick')}
-        >租</NavBar>
-        <WhiteSpace size="xs" />
+          rightContent="Next">
+            <Icon type="heart" style={{ color: 'rgb(255, 219, 2)', fontSize: '2rem'}}></Icon>
+        </NavBar>
 
         <List renderHeader={() => "Suggestion List"}>
           <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={40}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={58}></Avatar>
             <List.Item >Victoria Banks (I319324)
               <List.Item.Brief>
                 <Rate disabled defaultValue={5} />
                 5/5</List.Item.Brief>
               <List.Item.Brief >
-                <Tag color="magenta">Guitar</Tag>
-                <Tag color="blue">Yoga</Tag>
-                <Tag color="red">Dance</Tag>
-                <Tag color="green">No Pet</Tag>
+                <Tag color="magenta">吉他</Tag>
+                <Tag color="blue">瑜伽</Tag>
+                <Tag color="red">跳舞</Tag>
+                <Tag color="green">不养宠物</Tag>
                 <br />
-                <Tag color="gold">Computer Science</Tag>
-                <Tag color="purple">Single</Tag>
+                <Tag color="gold">程序员</Tag>
+                <Tag color="purple">单身</Tag>
               </List.Item.Brief>
             </List.Item>
             <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
@@ -46,15 +46,15 @@ class Entry extends Component {
           </Flex>
 
           <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={40}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={58}></Avatar>
             <List.Item>Kathy Tucker (I3134324)
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
                 4/5</List.Item.Brief>
               <List.Item.Brief>
-                <Tag color="green">No Pet</Tag>
-                <Tag color="gold">Computer Science</Tag>
-                <Tag color="purple">Single</Tag>
+                <Tag color="green">不养宠物</Tag>
+                <Tag color="gold">程序员</Tag>
+                <Tag color="purple">单身</Tag>
               </List.Item.Brief>
             </List.Item>
             <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
@@ -62,14 +62,14 @@ class Entry extends Component {
           </Flex>
 
           <Flex align="start">
-            <Avatar icon="user" style={{ backgroundColor: '#87d068' }}></Avatar>
+            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={58}></Avatar>
             <List.Item>Marco del Toro (I419324)
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
                 4/5</List.Item.Brief>
               <List.Item.Brief >
-                <Tag color="gold" >Computer Science</Tag>
-                <Tag color="purple">Single</Tag>
+                <Tag color="gold" >程序员</Tag>
+                <Tag color="purple">单身</Tag>
               </List.Item.Brief>
             </List.Item>
             <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
@@ -77,14 +77,14 @@ class Entry extends Component {
           </Flex>
 
           <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={40}></Avatar>
+            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={58}></Avatar>
             <List.Item>Howard Domingo (I733324)
               <List.Item.Brief>
                 <Rate disabled defaultValue={2} style={{color: '#ffa500e6'}}/>
                 2/5</List.Item.Brief>
               <List.Item.Brief >
-                <Tag color="gold">Computer Science</Tag>
-                <Tag color="cyan">Love Pet</Tag>
+                <Tag color="gold">程序员</Tag>
+                <Tag color="cyan">养猫</Tag>
               </List.Item.Brief>
             </List.Item>
             <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
@@ -95,5 +95,5 @@ class Entry extends Component {
     );
   }
 }
- 
+
 export default Entry;

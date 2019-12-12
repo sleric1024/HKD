@@ -83,10 +83,10 @@ function PersonInfo () {
 
         <h3 style={{color: '#999898', fontSize: '1.25rem'}}>Gender for your roomate:</h3>
         <List>
-          <RadioItem key="male" checked={'male' === gender} onChange={() => setGender('male')}>
+          <RadioItem key="male" className={'male' === gender ? 'genderSelected' : ''} checked={'male' === gender} onChange={() => setGender('male')}>
             Male (男)
           </RadioItem>
-          <RadioItem key="female"  checked={'female' === gender} onChange={() => setGender('female')}>
+          <RadioItem key="female" className={'female' === gender ? 'genderSelected' : ''} checked={'female' === gender} onChange={() => setGender('female')}>
            Female (女)
           </RadioItem>
         </List>
@@ -116,6 +116,10 @@ function PersonInfo () {
             })
           }
         </div>
+        <WhiteSpace size="lg" />
+        <WhiteSpace size="lg" />
+        <WhiteSpace size="lg" />
+        <WhiteSpace size="lg" />
 
       </WingBlank>
     </div>

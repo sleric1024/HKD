@@ -1,6 +1,5 @@
 
 .suggestion-selection .am-navbar {
-  margin-top: 10px;
 }
 .suggestion-selection div.nav .am-navbar-left {
   color: gray;
@@ -20,6 +19,7 @@
 .suggestion-selection .ant-rate {
   font-size: 14px;
   color: #308930e8;
+  margin-right: 10px;
 }
 
 .suggestion-selection .ant-avatar {

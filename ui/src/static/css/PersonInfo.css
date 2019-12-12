@@ -42,3 +42,13 @@
 .person-info .am-list-item .am-list-line .am-list-content {
   color: #999898;
 }
+
+.person-info .genderSelected {
+  background: #383838;
+}
+.person-info .am-list-item.genderSelected .am-list-line .am-list-content {
+  color: #ffffff;
+}
+.person-info .am-list-item .am-radio.am-radio-checked .am-radio-inner:after {
+  border-color: #ffffff;
+}
