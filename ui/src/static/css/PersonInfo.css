@@ -52,3 +52,7 @@
 .person-info .am-list-item .am-radio.am-radio-checked .am-radio-inner:after {
   border-color: #ffffff;
 }
+
+.person-info .am-navbar-right a {
+  color: #ffffff;
+}

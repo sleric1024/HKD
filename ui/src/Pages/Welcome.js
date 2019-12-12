@@ -3,6 +3,7 @@ import randomColor from 'randomcolor';
 import TagCloud from 'react-tag-cloud';
 import { Button } from 'antd-mobile';
 import { Icon } from 'antd';
+import { Link } from 'react-router-dom';
 import 'antd-mobile/dist/antd-mobile.css';
 import '../static/css/Welcome.css'
 
@@ -18,25 +19,37 @@ const styles = {
 };
 
 class WelcomeApp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   componentDidMount() {
+    setTimeout(() => {
+      this.forceUpdate();
+    }, 0);
+
     setInterval(() => {
       this.forceUpdate();
-    }, 3000);
+    }, 2500);
+
   }
 
   render() {
     return (
       <div className='app-outer'>
         <div className='app-inner'>
-          <Button
-            icon={<Icon type="heart" style={{ color: 'rgb(255, 219, 2)' }}></Icon>}
-            style={
-            {
-              background: '#3c808e',
-              fontSize: '1.5rem',
-              fontWeight: 'bold',
-              color: '#FFF'
-            }} className='tag-title'>Digital Employee Center</Button>
+          <Link to="/topic">
+            <Button
+              icon={<Icon type="heart" style={{ color: 'rgb(255, 219, 2)' }}></Icon>}
+              style={
+              {
+                background: '#3c808e',
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                color: '#FFF'
+              }} className='tag-title'>Digital Employee Center</Button>
+            </Link>
 
           <TagCloud
             className='tag-cloud'

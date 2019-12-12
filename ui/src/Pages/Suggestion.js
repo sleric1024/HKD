@@ -77,7 +77,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={30}></Avatar>
+            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={40}></Avatar>
             <List.Item>Marco del Toro
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />

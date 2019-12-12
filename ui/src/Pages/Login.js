@@ -7,6 +7,7 @@ import logo2 from '../logo/2.svg';
 import logo3 from '../logo/3.svg';
 import logo4 from '../logo/4.svg';
 import '../static/css/Login.css'
+import { Link } from 'react-router-dom';
 
 class Login extends Component {
   constructor(props) {
@@ -40,9 +41,11 @@ class Login extends Component {
           <List.Item thumb={logo3} extra='2019/12/13'>SAP Digital Parking
             <List.Item.Brief>暂无新消息</List.Item.Brief>
           </List.Item>
-          <List.Item thumb={logo4} extra='2019/12/13'>SAP Digital Employee Center
-            <List.Item.Brief>Enjoy</List.Item.Brief>
-          </List.Item>
+          <Link to="/welcome">
+            <List.Item thumb={logo4} extra='2019/12/13'>SAP Digital Employee Center
+              <List.Item.Brief>Enjoy</List.Item.Brief>
+            </List.Item>
+          </Link>
         </List>
       </div>
     );
