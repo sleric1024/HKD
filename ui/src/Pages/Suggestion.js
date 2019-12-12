@@ -17,12 +17,12 @@ class Entry extends Component {
     return (
       <div className="suggestion-selection">
         <NavBar
-          className="nav"
-          mode="light"
+          className="navbar-style"
           leftContent="Back"
           onLeftClick={() => console.log('onLeftClick')}
-        >租</NavBar>
-        <WhiteSpace size="xs" />
+          rightContent="Next">
+            <Icon type="heart" style={{ color: 'rgb(255, 219, 2)', fontSize: '2rem'}}></Icon>
+        </NavBar>
 
         <List renderHeader={() => "Suggestion List"}>
           <WingBlank size="md">
@@ -34,13 +34,13 @@ class Entry extends Component {
                 <Rate disabled defaultValue={5} />
                 5/5</List.Item.Brief>
               <List.Item.Brief >
-                <Tag color="magenta">Guitar</Tag>
-                <Tag color="blue">Yoga</Tag>
-                <Tag color="red">Dance</Tag>
-                <Tag color="green">No Pet</Tag>
+                <Tag color="magenta">吉他</Tag>
+                <Tag color="blue">瑜伽</Tag>
+                <Tag color="red">跳舞</Tag>
+                <Tag color="green">不养宠物</Tag>
                 <br />
-                <Tag color="gold">Computer Science</Tag>
-                <Tag color="purple">Single</Tag>
+                <Tag color="gold">程序员</Tag>
+                <Tag color="purple">单身</Tag>
               </List.Item.Brief>
             </List.Item>
             <Flex justify="end">
@@ -59,9 +59,9 @@ class Entry extends Component {
                 <Rate disabled defaultValue={4} />
                 4/5</List.Item.Brief>
               <List.Item.Brief>
-                <Tag color="green">No Pet</Tag>
-                <Tag color="gold">Computer Science</Tag>
-                <Tag color="purple">Single</Tag>
+                <Tag color="green">不养宠物</Tag>
+                <Tag color="gold">程序员</Tag>
+                <Tag color="purple">单身</Tag>
               </List.Item.Brief>
             </List.Item>
             <Flex justify="end">
@@ -80,8 +80,8 @@ class Entry extends Component {
                 <Rate disabled defaultValue={4} />
                 4/5</List.Item.Brief>
               <List.Item.Brief >
-                <Tag color="gold" >Computer Science</Tag>
-                <Tag color="purple">Single</Tag>
+                <Tag color="gold" >程序员</Tag>
+                <Tag color="purple">单身</Tag>
               </List.Item.Brief>
             </List.Item>
             <Flex justify="end">
@@ -100,8 +100,8 @@ class Entry extends Component {
                 <Rate disabled defaultValue={2} style={{color: '#ffa500e6'}}/>
                 2/5</List.Item.Brief>
               <List.Item.Brief >
-                <Tag color="gold">Computer Science</Tag>
-                <Tag color="cyan">Love Pet</Tag>
+                <Tag color="gold">程序员</Tag>
+                <Tag color="cyan">养猫</Tag>
               </List.Item.Brief>
             </List.Item>
             <Flex justify="end">
@@ -116,5 +116,5 @@ class Entry extends Component {
     );
   }
 }
- 
+
 export default Entry;

@@ -5,18 +5,20 @@ import logo1 from '../logo/1.svg';
 import logo2 from '../logo/2.svg';
 import logo3 from '../logo/3.svg';
 import logo4 from '../logo/4.svg';
+import '../static/css/Login.css'
 
 class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {}
   }
-  render() { 
+  render() {
     return (
-      <div>
+      <div className="login-page">
         <NavBar
           mode="light"
           icon={<Icon type="left" />}
+          style={{background: '#fff'}}
           onLeftClick={() => console.log('onLeftClick')}
           rightContent={[
             <Icon key="0" type="right" />,
@@ -34,5 +36,5 @@ class Login extends Component {
     );
   }
 }
- 
+
 export default Login;

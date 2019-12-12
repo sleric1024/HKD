@@ -58,7 +58,7 @@ class TopicSelection extends Component {
           <WhiteSpace size="lg" />
 
           <h3 style={{color: '#999898', fontSize: '1.25rem'}}>What's your interested topic?</h3>
-          <Grid className="topic-grid" data={data} columnNum={3} hasLine={false} itemStyle={{color: '#fff'}} activeStyle={false} />
+          <Grid className={"topic-grid"} data={data} columnNum={3} hasLine={false} itemStyle={{color: '#fff'}} activeStyle={false} />
 
         </WingBlank>
       </div>
