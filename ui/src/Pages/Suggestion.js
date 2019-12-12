@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavBar, WhiteSpace, List, Flex} from 'antd-mobile';
+import { NavBar, WhiteSpace, Flex, List, WingBlank} from 'antd-mobile';
 import { Avatar, Icon, Tag, Rate} from 'antd';
 import 'antd-mobile/dist/antd-mobile.css';
 import logo1 from '../logo/1.svg';
@@ -25,9 +25,11 @@ class Entry extends Component {
         <WhiteSpace size="xs" />
 
         <List renderHeader={() => "Suggestion List"}>
-          <Flex align="start">
+          <WingBlank size="md">
+            <Flex align="start">
             <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={40}></Avatar>
-            <List.Item >Victoria Banks (I319324)
+            <List.Item >
+              Victoria Banks
               <List.Item.Brief>
                 <Rate disabled defaultValue={5} />
                 5/5</List.Item.Brief>
@@ -41,13 +43,18 @@ class Entry extends Component {
                 <Tag color="purple">Single</Tag>
               </List.Item.Brief>
             </List.Item>
-            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
-            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            <Flex justify="end">
+              <Tag color="#108ee9" className="inumber">I209324</Tag>
+              <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+              <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            </Flex>
           </Flex>
+          </WingBlank>
 
-          <Flex align="start">
+          <WingBlank size="md">
+            <Flex align="start">
             <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={40}></Avatar>
-            <List.Item>Kathy Tucker (I3134324)
+            <List.Item>Kathy Tucker
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
                 4/5</List.Item.Brief>
@@ -57,13 +64,18 @@ class Entry extends Component {
                 <Tag color="purple">Single</Tag>
               </List.Item.Brief>
             </List.Item>
-            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
-            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            <Flex justify="end">
+              <Tag color="#108ee9" className="inumber">I814029</Tag>
+              <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+              <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            </Flex>
           </Flex>
+          </WingBlank>
 
-          <Flex align="start">
-            <Avatar icon="user" style={{ backgroundColor: '#87d068' }}></Avatar>
-            <List.Item>Marco del Toro (I419324)
+          <WingBlank size="md">
+            <Flex align="start">
+            <Avatar icon="user" style={{ backgroundColor: '#87d068' }} size={40}></Avatar>
+            <List.Item>Marco del Toro
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
                 4/5</List.Item.Brief>
@@ -72,13 +84,18 @@ class Entry extends Component {
                 <Tag color="purple">Single</Tag>
               </List.Item.Brief>
             </List.Item>
-            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
-            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            <Flex justify="end">
+              <Tag color="#108ee9" className="inumber">I419321</Tag>
+              <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+              <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            </Flex>
           </Flex>
+          </WingBlank>
 
-          <Flex align="start">
+          <WingBlank size="md">
+            <Flex align="start">
             <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={40}></Avatar>
-            <List.Item>Howard Domingo (I733324)
+            <List.Item>Howard Domingo
               <List.Item.Brief>
                 <Rate disabled defaultValue={2} style={{color: '#ffa500e6'}}/>
                 2/5</List.Item.Brief>
@@ -87,9 +104,13 @@ class Entry extends Component {
                 <Tag color="cyan">Love Pet</Tag>
               </List.Item.Brief>
             </List.Item>
-            <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
-            <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            <Flex justify="end">
+              <Tag color="#108ee9" className="inumber">I733362</Tag>
+              <Icon type="mail" theme="twoTone" className="ant-icon"></Icon>
+              <Icon type="phone" theme="twoTone" className="ant-icon"></Icon>
+            </Flex>
           </Flex>
+          </WingBlank>
         </List>
       </div>
     );
