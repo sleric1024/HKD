@@ -6,6 +6,9 @@ import logo1 from '../logo/1.svg';
 import logo2 from '../logo/2.svg';
 import logo3 from '../logo/3.svg';
 import logo4 from '../logo/4.svg';
+import img1 from '../logo/img1.jpeg';
+import img2 from '../logo/img2.png';
+import img4 from '../logo/img4.jpeg';
 import '../static/css/Suggestion.css';
 
 class Entry extends Component {
@@ -27,7 +30,7 @@ class Entry extends Component {
         <List renderHeader={() => "Suggestion List"}>
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8TJZQ8SV-7768a3157639-512" size={30}></Avatar>
+            <Avatar src={img1} size={30}></Avatar>
             <List.Item >
               Victoria Banks
               <List.Item.Brief>
@@ -52,7 +55,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8VB7U91U-0ed2bc407f16-512" size={30}></Avatar>
+            <Avatar src={img2} size={30}></Avatar>
             <List.Item>Kathy Tucker
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
@@ -94,7 +97,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src="https://ca.slack-edge.com/T95TT7UDT-W8U9HS2UV-deae1e944f00-512" size={30}></Avatar>
+            <Avatar src={img4} size={30}></Avatar>
             <List.Item>Howard Domingo
               <List.Item.Brief>
                 <Rate disabled defaultValue={2} style={{color: '#ffa500e6'}}/>
