@@ -30,7 +30,7 @@ class Entry extends Component {
         <List renderHeader={() => "Suggestion List"}>
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src={img1} size={30}></Avatar>
+            <Avatar src={img1} size={40}></Avatar>
             <List.Item >
               Victoria Banks
               <List.Item.Brief>
@@ -55,7 +55,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src={img2} size={30}></Avatar>
+            <Avatar src={img2} size={40}></Avatar>
             <List.Item>Kathy Tucker
               <List.Item.Brief>
                 <Rate disabled defaultValue={4} />
@@ -97,7 +97,7 @@ class Entry extends Component {
 
           <WingBlank size="sm">
             <Flex align="start">
-            <Avatar src={img4} size={30}></Avatar>
+            <Avatar src={img4} size={40}></Avatar>
             <List.Item>Howard Domingo
               <List.Item.Brief>
                 <Rate disabled defaultValue={2} style={{color: '#ffa500e6'}}/>

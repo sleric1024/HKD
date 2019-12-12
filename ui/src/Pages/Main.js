@@ -12,6 +12,7 @@ function Main() {
     <Router>
       <Route path="/welcome/" exact component={Welcome} />
       <Route path="/topic/" exact component={TopicSelection} />
+      <Route path="/" exact component={Login} />
       <Route path="/login/" exact component={Login} />
       <Route path="/suggestion/" exact component={Suggestion} />
       <Route path="/info/" exact component={PersionInfo} />
