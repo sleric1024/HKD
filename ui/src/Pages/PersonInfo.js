@@ -1,7 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { NavBar, WhiteSpace, WingBlank,
     Flex, InputItem, Button, Radio, List } from 'antd-mobile';
-import { Tag, Icon, Divider } from 'antd';
+import { Tag, Icon, Divider, Spin} from 'antd';
 import 'antd-mobile/dist/antd-mobile.css';
 import 'antd/dist/antd.css';
 import '../static/css/PersonInfo.css';
@@ -30,9 +30,17 @@ function PersonInfo () {
   }
 
   const RadioItem = Radio.RadioItem;
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+  },[]);
 
   return (
-    <div className="person-info">
+    <Spin spinning={isLoading} >
+      <div className="person-info">
       <NavBar
         className="navbar-style"
         leftContent="Cancel"
@@ -123,6 +131,7 @@ function PersonInfo () {
 
       </WingBlank>
     </div>
+    </Spin>
   );
 }
 
