@@ -53,7 +53,7 @@ function PersonInfo (props) {
           <Icon type="heart" style={{ color: 'rgb(255, 219, 2)', fontSize: '2rem'}}></Icon>
       </NavBar>
 
-        <WingBlank>
+      <WingBlank style={{marginTop: '50px'}}>
         <WhiteSpace size="lg" />
 
         <Flex align="center">

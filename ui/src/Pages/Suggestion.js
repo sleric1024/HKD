@@ -26,7 +26,7 @@ class Entry extends Component {
             <Icon type="heart" style={{ color: 'rgb(255, 219, 2)', fontSize: '2rem'}}></Icon>
         </NavBar>
 
-        <List renderHeader={() => "Suggestion List"}>
+        <List style={{marginTop: '50px'}} renderHeader={() => <span style={{fontSize: '1.25rem'}}>Suggestion List</span>}>
           <WingBlank size="sm">
             <Flex align="start">
             <Avatar src={img1} size={40}></Avatar>
