@@ -39,18 +39,6 @@ class WelcomeApp extends Component {
     return (
       <div className='app-outer'>
         <div className='app-inner'>
-          <Link to="/topic">
-            <Button
-              icon={<Icon type="heart" style={{ color: 'rgb(255, 219, 2)' }}></Icon>}
-              style={
-              {
-                background: '#3c808e',
-                fontSize: '1.5rem',
-                fontWeight: 'bold',
-                color: '#FFF'
-              }} className='tag-title'>Digital Employee Center</Button>
-            </Link>
-
           <TagCloud
             className='tag-cloud'
             style={{
@@ -110,6 +98,18 @@ class WelcomeApp extends Component {
             <div style={styles.small}>单身</div>
             <div style={styles.small}>羽毛球</div>
           </TagCloud>
+
+          <Link to="/topic" style={{width: '80%', margin: '0 auto'}}>
+            <Button
+              icon={<Icon type="heart" style={{ color: 'rgb(255, 219, 2)' }}></Icon>}
+              style={
+              {
+                background: '#3c808e',
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                color: '#FFF'
+              }} className='tag-title'>Digital Employee Center</Button>
+          </Link>
         </div>
       </div>
     );

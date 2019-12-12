@@ -22,8 +22,7 @@ class Entry extends Component {
         <NavBar
           className="navbar-style"
           leftContent="Back"
-          onLeftClick={() => console.log('onLeftClick')}
-          rightContent="Next">
+          onLeftClick={() => console.log('onLeftClick')}>
             <Icon type="heart" style={{ color: 'rgb(255, 219, 2)', fontSize: '2rem'}}></Icon>
         </NavBar>
 
