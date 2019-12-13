@@ -6,6 +6,7 @@ import Login from './Login';
 import Suggestion from './Suggestion';
 import PersionInfo from './PersonInfo';
 import Matching from './Matching';
+import Map from './Map';
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
       <Route path="/suggestion/" exact component={Suggestion} />
       <Route path="/info/" exact component={PersionInfo} />
       <Route path="/matching/" exact component={Matching} />
+      <Route path="/map/" exact component={Map} />
     </Router>
   )
 }

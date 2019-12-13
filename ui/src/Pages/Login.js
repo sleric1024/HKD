@@ -26,7 +26,7 @@ class Login extends Component {
             <Icon key="0" type="plus-circle" />,
           ]}
         >思爱普上海分公司</NavBar>
-        <WhiteSpace size="xs" />
+        <WhiteSpace size="xs" style={{marginTop: '45px'}} />
 
         <SearchBar placeholder="搜索应用" />
 

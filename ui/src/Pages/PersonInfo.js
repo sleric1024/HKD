@@ -6,6 +6,7 @@ import 'antd-mobile/dist/antd-mobile.css';
 import 'antd/dist/antd.css';
 import '../static/css/PersonInfo.css';
 import { Link } from 'react-router-dom';
+import Map from './Map';
 
 function PersonInfo (props) {
 
@@ -92,6 +93,10 @@ function PersonInfo (props) {
         </div>
 
         <Divider />
+        <h3 style={{color: '#999898', fontSize: '1.25rem'}}>What's your address?</h3>
+        <Map></Map>
+        <Divider />
+
 
         <h3 style={{color: '#999898', fontSize: '1.25rem'}}>Gender for your roomate:</h3>
         <List>
