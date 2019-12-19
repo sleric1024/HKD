@@ -110,12 +110,13 @@ class Map extends React.Component {
     return (
       <div>
         <div id="r-result">
-          <InputItem
+          <input
               id="suggestId"
               clear
               placeholder="输入位置"
-            ></InputItem>
+            ></input>
         </div>
+        <WhiteSpace size="lg" />
         {/* <h4>{address}</h4> */}
         {/* <div
           id="searchResultPanel"

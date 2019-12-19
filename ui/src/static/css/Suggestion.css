@@ -38,3 +38,26 @@
 .suggestion-selection .inumber {
   margin: 15px 0 0 8px;
 }
+
+.suggestId {
+  width: 100%;
+}
+input#suggestId  {
+  color: #878b8d;
+  font-size: 1.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 2px 0;
+  border: 0;
+  background-color: transparent;
+  line-height: 1;
+  box-sizing: border-box;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  height: 44px;
+  padding-left: 15px;
+  border: solid 1px #999898;
+  flex: 50% 2 1;
+}
